@@ -12,7 +12,7 @@ public class elementsTest {
         System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver");
         open("https://demoqa.com/");
         $x("//div[@class='category-cards']/a[@href='/elements']").click();
-        $x("//div[1][@class='element-group']").shouldBe(exist).click();
+        $$x("//div[@class='element-group']").get(0).shouldBe(exist).click();
 //        System.out.println("1й элемент найден");
         $x("//div[1][@class='element-group']//li[@id='item-2']").click();
 //        System.out.println("2й элемент найден");
